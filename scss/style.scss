@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila&family=Oswald&family=Raleway&display=swap');
+@import 'header.scss';
+@import 'var.scss';
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Laila', sans-serif;
+}
+.row
+{
+  --bs-gutter-x:0px;
+}
