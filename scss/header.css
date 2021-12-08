@@ -1,4 +1,26 @@
 @import url(c:\Users\Anmol\OneDrive\Desktop\Portfolio\scss\style.css);
+h3 {
+  font-weight: 900;
+}
+
+.btn {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 100px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 400;
+  margin: auto;
+  background-color: #FF5733;
+}
+
+.btn a {
+  font-size: 15px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
 .main-banner {
   position: relative;
   margin: 0 auto;
@@ -15,10 +37,11 @@
 }
 
 .navbar-nav .nav-item .nav-link {
-  color: white;
+  color: #000;
   font-weight: 600;
   letter-spacing: 2px;
   padding: 0px 20px;
+  font-size: 17px;
 }
 
 .navbar-nav {
@@ -27,22 +50,89 @@
 }
 
 .parts {
-  position: absolute;
-  width: 100%;
   top: 5%;
-  text-align: right;
+  text-align: left;
+}
+
+.parts .lefts {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 200px;
+}
+
+.parts .lefts .service {
+  padding: 10px 0px;
+}
+
+.parts .lefts .text span {
+  font-size: 65px;
+  font-weight: 900;
+  font-style: bold;
+  color: #FF5733;
+}
+
+.parts .lefts .text1 {
+  padding: 15px 0px;
+}
+
+.parts .lefts .btn-1 {
+  width: 170px;
+  height: 50px;
+  margin: 20px 0px;
+}
+
+.parts .lefts .btn-1 a {
+  margin-top: 15px;
+  color: white;
 }
 
 .parts .rights {
-  padding-bottom: 200px;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  padding-left: 70px;
+  padding-top: 40px;
 }
 
 .parts .rights .picture {
-  height: 50vh;
+  position: absolute;
+  -webkit-animation: move 2.5s linear infinite;
+          animation: move 2.5s linear infinite;
 }
 
 .parts .rights .picture img {
-  -webkit-clip-path: polygon(50% 9%, 84% 50%, 50% 88%, 16% 50%);
-          clip-path: polygon(50% 9%, 84% 50%, 50% 88%, 16% 50%);
+  width: 600px;
+  height: 600px;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translate(-15px, 0px);
+            transform: translate(-15px, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0px, -25px);
+            transform: translate(0px, -25px);
+  }
+  100% {
+    -webkit-transform: translate(-15px, 0px);
+            transform: translate(-15px, 0px);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translate(-15px, 0px);
+            transform: translate(-15px, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0px, -25px);
+            transform: translate(0px, -25px);
+  }
+  100% {
+    -webkit-transform: translate(-15px, 0px);
+            transform: translate(-15px, 0px);
+  }
 }
 /*# sourceMappingURL=header.css.map */

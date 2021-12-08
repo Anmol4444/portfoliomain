@@ -16,7 +16,7 @@
 }
 
 .navbar-nav .nav-item .nav-link {
-  color: white;
+  color: #000;
   font-weight: 600;
   letter-spacing: 2px;
   padding: 0px 20px;
@@ -30,7 +30,7 @@
 .parts {
   position: absolute;
   width: 100%;
-  top: 30%;
+  top: 5%;
   text-align: right;
 }
 
@@ -39,12 +39,21 @@
 }
 
 .parts .rights .picture {
-  height: 50vh;
+  -webkit-clip-path: polygon(50% 9%, 84% 50%, 50% 88%, 16% 50%);
+          clip-path: polygon(50% 9%, 84% 50%, 50% 88%, 16% 50%);
+  border: solid 2px #FF5733;
 }
 
 .parts .rights .picture img {
+  width: 100%;
+  height: 100vh;
+}
+
+.parts .picture1 {
   -webkit-clip-path: polygon(50% 9%, 84% 50%, 50% 88%, 16% 50%);
           clip-path: polygon(50% 9%, 84% 50%, 50% 88%, 16% 50%);
+  border: solid 2px #FF5733;
+  background: transparent;
 }
 
 * {

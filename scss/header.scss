@@ -1,6 +1,6 @@
 @import 'style.css';
-
-
+@import 'var.scss';
+@import 'common.scss';
 .main-banner 
 {
     position: relative;
@@ -20,11 +20,11 @@
 }
 .navbar-nav .nav-item .nav-link
 {
-    color: white;
+    color: $black;
     font-weight:600;
     letter-spacing: 2px;
     padding: 0px 20px;
-    
+    font-size: 17px;
 }
 .navbar-nav
 {
@@ -32,21 +32,78 @@
     padding: 25px 0px;
 }
 .parts
-{   position: absolute;
+{   
    
-     width: 100%;
+     top: 5%;
+    text-align: left;
     
-    top: 5%;
-    text-align: right;
-    .rights
-    {padding-bottom: 200px;
+        
+    
+
+    .lefts{
+        align-items: center;
+        padding-top: 200px;
+       .service{
+           padding: 10px 0px;
+       }
+        .text span{
+            font-size: 65px;
+            font-weight: 900;
+            font-style: bold;
+            color: $main-color;
+        }
+        .text1{
+            padding: 15px 0px;
+        }
+        .btn-1{
+            width: 170px;
+            height: 50px;
+            margin: 20px 0px;
+            a{
+                margin-top: 15px;
+                color: white;
+            }
+        }
+
+
+
+
+    }
+
+
+
+
+
+    .rights{
+    // {padding-bottom: 200px;
+        align-items: right;
+        padding-left:70px ;
+        padding-top: 40px;
         .picture{
-            height: 50vh;
+            
+            // clip-path: polygon(50% 9%, 84% 50%, 50% 88%, 16% 50%);
+            position: absolute;
+            animation: move 2.5s linear infinite;
+            
             
         
          img{
-            clip-path: polygon(50% 9%, 84% 50%, 50% 88%, 16% 50%);
-        }}
+            width: 600px;
+            height: 600px;
+           
+        }
+        
+}
+
+}}
+@keyframes move{
+    0%{
+        transform: translate(-15px, 0px);
     }
-    
+    50%{
+        transform: translate(0px, -25px);
+    }
+    100%{
+        transform: translate(-15px, 0px);
+    }
 }
